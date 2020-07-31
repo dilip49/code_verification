@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application will varify phone numbers using Twilio's Verify API. For more details about Twilio's Verify API please visit to it's official site.
 
-Things you may want to cover:
+Ruby Version
+ruby '2.6.6'
 
-* Ruby version
+Ruby on rails
+gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
 
-* System dependencies
+In order to use this application you have to register yourself on https://www.twilio.com/try-twilio and get api key and use twilio url. 
 
-* Configuration
+app/config/initializers:
 
-* Database creation
+Authy.api_key = 'YOUR API KEY'
+Authy.api_url  = 'API URL'
 
-* Database initialization
+If you'd like to run the example locally, make sure you have Ruby and Rails version installed, then do the following :
 
-* How to run the test suite
+1. bundle install
+2. rake db:create
+3. rake db:schema:load
+4. bin/rails server
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+And visit to http://localhost:3000/
