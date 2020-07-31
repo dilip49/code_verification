@@ -12,7 +12,7 @@ In order to use this application you have to register yourself on https://www.tw
 
 app/config/initializers:<br />
 
-Authy.api_key = 'YOUR API KEY'
+Authy.api_key = 'YOUR API KEY'<br />
 Authy.api_url  = 'API URL'
 
 If you'd like to run the example locally, make sure you have Ruby and Rails version installed, then do the following :
